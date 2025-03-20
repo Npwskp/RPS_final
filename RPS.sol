@@ -17,7 +17,7 @@ contract RPS {
         if (numPlayer > 0) {
             require(msg.sender != players[0]);
         }
-        require(msg.value == 1 ether);
+        require(msg.value == 0.000001 ether);
         reward += msg.value;
         player_not_played[msg.sender] = true;
         players.push(msg.sender);
